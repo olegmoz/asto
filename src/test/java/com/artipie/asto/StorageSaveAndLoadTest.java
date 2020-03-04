@@ -113,4 +113,8 @@ public final class StorageSaveAndLoadTest {
         final Key key = new Key.From("shouldFailToLoadAbsentValue");
         Assertions.assertThrows(RuntimeException.class, () -> blocking.value(key));
     }
+
+    //todo: fail to save data if parent already exists with data
+    //todo: fail to save data if child already exists with data
+    //todo: okey to save data if sibling already exists with data
 }

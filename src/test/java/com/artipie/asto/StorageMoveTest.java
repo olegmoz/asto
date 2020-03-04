@@ -71,4 +71,6 @@ public final class StorageMoveTest {
         final Key destination = new Key.From("shouldFailToMoveAbsentValue-destination");
         Assertions.assertThrows(RuntimeException.class, () -> blocking.move(source, destination));
     }
+
+    //todo: check that original value does not exist after move
 }
